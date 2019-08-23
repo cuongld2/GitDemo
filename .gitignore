@@ -1,0 +1,8 @@
+#Ignore pytest cache
+.pytest_cache
+
+#Ignore venv
+venv
+
+#Ignore idea
+.idea
