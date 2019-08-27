@@ -1,4 +1,4 @@
-from models.elements.testrail_elements import LoginPageElements
+from models.elements.testrail_elements import LoginPageElements, HomePageElements
 
 
 class LoginOBject:
@@ -16,3 +16,9 @@ class LoginOBject:
         login_button = self.login_page_element.find_login_button(driver)
         login_button.click()
 
+
+class HomePageObject:
+    home_page_element = HomePageElements()
+
+    def click_browser_mobile(self, driver):
+        self.home_page_element.find_browser_mobile(driver).click()
