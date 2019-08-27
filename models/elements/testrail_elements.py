@@ -1,7 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-from models.locators.testrail_locators import LoginLocators, HomePageLocators
+from models.locators.testrail_locators import LoginLocators, HomePageLocators, AddResultLocators
 
 
 class LoginPageElements:
@@ -30,3 +30,17 @@ class HomePageElements:
         wait = WebDriverWait(driver, 5)
         return wait.until(ec.presence_of_element_located(HomePageLocators.TEST_CASE_RESULT_LOCATOR))
 
+    def find_test_run(self, driver):
+        wait = WebDriverWait(driver, 5)
+        return  wait.until(ec.presence_of_element_located(HomePageLocators.TEST_RUN_LOCATOR))
+
+
+class AddResultElements:
+
+    def find_add_result_btn(self, driver):
+        wait = WebDriverWait(driver, 5)
+        return wait.until(ec.presence_of_element_located(AddResultLocators.ADD_RESULT_LOCATOR))
+
+    def find_add_result_sm_btn(self, driver):
+        wait = WebDriverWait(driver, 5)
+        return wait.until(ec.presence_of_element_located(AddResultLocators.ADD_RESULT_SM_LOCATOR))
