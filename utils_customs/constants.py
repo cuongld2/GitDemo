@@ -1,6 +1,7 @@
 
 class SiteUrls:
     TESTRAIL_URL = 'https://phamduong.testrail.io/index.php?/auth/login'
+    FACEBOOK_URL = 'https://www.facebook.com/'
 
 
 class AuthenticationInfo:
