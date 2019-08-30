@@ -4,8 +4,6 @@ import pyautogui as pyautogui
 import pytest
 from selenium import webdriver
 
-from utils_customs.constants import SiteUrls
-
 
 class TestSideBar:
 
@@ -16,7 +14,7 @@ class TestSideBar:
         driver.quit()
 
     def test_facebook_icon(self, set_up_browser):
-        time.sleep(3)
+        time.sleep(2)
         coords = pyautogui.locateOnScreen('facebook_icon.PNG')
         pyautogui.click(coords)
-        a = 5
+
