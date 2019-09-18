@@ -102,3 +102,9 @@ class TestTestRail:
             local_keyboard.release(Key.enter)
         finally:
             driver.quit()
+
+    def test_click_spellchecker(self):
+        driver = webdriver.Chrome()
+        try:
+            driver.get()
+

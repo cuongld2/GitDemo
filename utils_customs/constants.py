@@ -9,4 +9,6 @@ class AuthenticationInfo:
     TESTRAIL_PASSWORD = 'Duong@123456'
 
 
+class SettingsPageUrls:
+    URL_SETTINGS_PAGE = 'coccoc://settings/'
 
