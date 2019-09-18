@@ -2,6 +2,7 @@
 class SiteUrls:
     TESTRAIL_URL = 'http://testrail.coccoc.com/index.php?/auth/login/'
     TESTQC_URL = 'http://staging-1-qc.coccoc.com/user/login'
+    TEST_CC_SETTINGS_PAGE_URL = 'coccoc://settings/languages'
 
 
 class AuthenticationInfo:

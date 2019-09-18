@@ -17,3 +17,8 @@ class LoginPageElements:
     def find_login_button(self, driver):
         wait = WebDriverWait(driver, 5)
         return wait.until(ec.presence_of_element_located(LoginStagingLocator.LOGIN_BUTTON_LOCATOR))
+
+    def find_header_button(self, driver):
+        wait = WebDriverWait(driver, 5)
+        return wait.until(ec.presence_of_element_located(LoginStagingLocator.HEADER_LINK_LOCATOR))
+
