@@ -7,7 +7,6 @@ from utils_customs.constants import SiteUrls, AuthenticationInfo
 from pynput.keyboard import Key
 
 
-
 class TestTestRail:
     login_object = LoginOBject()
     homepage_object = HomePageObject()
