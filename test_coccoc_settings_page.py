@@ -1,7 +1,6 @@
 from selenium import webdriver
-
 from models.objects.spell_checker_object import ClickSpellCheck
-from utils_customs.constants import SiteUrls, AuthenticationInfo
+from utils_customs.constants import SiteUrls
 
 
 class TestCheckOnSpellChecker:

@@ -9,5 +9,4 @@ class SpellCheckElements(BasePageElement):
 
     def find_spell_check(self, driver):
         return self.find_shadow_element(driver, 'settings-ui', 'settings-main', 'settings-basic-page',
-                                 'settings-languages-page', '#enableSpellcheckingToggle')
-
+                                        'settings-languages-page', '#enableSpellcheckingToggle')
