@@ -1,20 +1,12 @@
 import time
 
-import pyautogui as pyautogui
+import pyautogui
 import pytest
-from selenium import webdriver
+from utils_automation.setup import Browser
 
 
-class TestSideBar:
-
-    @pytest.fixture(scope='module')
-    def set_up_browser(self):
-        driver = webdriver.Chrome()
-        yield driver
-        driver.quit()
-
-    def test_facebook_icon(self, set_up_browser):
+class TestRRIcon:
+    def test_click_rr(self, browser):
         time.sleep(2)
-        coords = pyautogui.locateOnScreen('facebook_icon.PNG')
+        coords = pyautogui.locateOnScreen('rungrinh_icon.PNG')
         pyautogui.click(coords)
-
