@@ -1,3 +1,4 @@
+from models.elements.coccoc_settings_elements import SettingsElements
 from models.elements.testrail_elements import LoginPageElements, HomePageElements, AddResultElements
 
 
@@ -35,3 +36,10 @@ class AddResultObject:
 
     def click_add_result_sm(self, driver):
         self.add_result_element.find_add_result_sm_btn(driver).click()
+
+
+class SpellCheckerObject:
+    find_shadow_element = SettingsElements()
+
+    def click_spell_checker(self, driver):
+        self.find_shadow_element.find_spell_checker(driver).click()
