@@ -1,14 +1,12 @@
 
 class SiteUrls:
-    TESTRAIL_URL = 'http://testrail.coccoc.com/index.php?/auth/login/'
-    TESTQC_URL = 'http://staging-1-qc.coccoc.com/user/login'
+    FACEBOOK_URL = 'https://www.facebook.com/'
 
 
 class AuthenticationInfo:
-    TESTRAIL_EMAIL = 'bichngoc@coccoc.com'
-    TESTRAIL_PASSWORD = '123456'
-    TESTQC_EMAIL = 'thu1@cc.vn'
-    TESTQC_PASSWORD = 'q1'
+    FACEBOOK_EMAIL = 'nganhanguyen0306@gmail.com'
+    FACEBOOK_PASSWORD = 'h@$123456'
+
 
 
 

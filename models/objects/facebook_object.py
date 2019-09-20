@@ -1,4 +1,4 @@
-from models.elements.test_stagingqc_elements import LoginPageElements
+from models.elements.facebook_elements import LoginPageElements
 
 
 class LoginOBject:
@@ -15,3 +15,4 @@ class LoginOBject:
 
         login_button = self.login_page_element.find_login_button(driver)
         login_button.click()
+

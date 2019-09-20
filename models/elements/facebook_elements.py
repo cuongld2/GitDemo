@@ -1,7 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-from models.locators.testrail_locators import LoginLocators
+from models.locators.facebook_locators import LoginLocators
 
 
 class LoginPageElements:
