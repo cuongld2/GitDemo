@@ -11,10 +11,10 @@ class TestSideBar:
     def set_up_browser(self):
         driver = webdriver.Chrome()
         yield driver
-        driver.quit()
+        time.sleep(4)
 
     def test_facebook_icon(self, set_up_browser):
-        time.sleep(2)
+        time.sleep(5)
         coords = pyautogui.locateOnScreen('facebook_icon.PNG')
         pyautogui.click(coords)
 

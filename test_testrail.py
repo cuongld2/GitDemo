@@ -1,7 +1,7 @@
 import time
 
 from selenium import webdriver
-
+S
 from models.objects.testrail_object import LoginOBject, HomePageObject, AddResultObject
 from utils_customs.constants import SiteUrls, AuthenticationInfo
 from pynput.keyboard import Key, Controller
@@ -102,9 +102,4 @@ class TestTestRail:
             local_keyboard.release(Key.enter)
         finally:
             driver.quit()
-
-    def test_click_spellchecker(self):
-        driver = webdriver.Chrome()
-        try:
-            driver.get()
 
