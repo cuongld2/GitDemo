@@ -17,4 +17,13 @@ class TestSideBar:
         time.sleep(2)
         coords = pyautogui.locateOnScreen('facebook_icon.PNG')
         pyautogui.click(coords)
+        time.sleep(5)
 
+
+class TestRungRinh:
+
+    def test_rungrinh_icon(self, browser):
+            time.sleep(5)
+            coords = pyautogui.locateOnScreen('rungrinh_icon.png')
+            pyautogui.click(coords)
+            time.sleep(5)
