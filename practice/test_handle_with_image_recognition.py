@@ -12,6 +12,7 @@ class TestSideBar:
         driver = webdriver.Chrome()
         yield driver
         time.sleep(4)
+        driver.quit()
 
     def test_facebook_icon(self, set_up_browser):
         time.sleep(5)
