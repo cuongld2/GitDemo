@@ -9,4 +9,7 @@ class AuthenticationInfo:
     TESTRAIL_PASSWORD = 'Duong@123456'
 
 
+class CocCocSettingsUrls:
+    SETTINGS_LANGUAGES = 'coccoc://settings/languages'
+
 
