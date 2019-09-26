@@ -12,3 +12,7 @@ class AuthenticationInfo:
 class SettingsPageUrls:
     URL_SETTINGS_PAGE = 'coccoc://settings/'
 
+
+class QcPageUrl:
+    URL_QC_PAGE = 'http://staging-1-qc.coccoc.com/user/login'
+
