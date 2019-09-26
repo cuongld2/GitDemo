@@ -6,4 +6,5 @@ class LoginStagingLocator:
     PASSWORD_LOCATOR = (By.NAME, 'password')
     LOGIN_BUTTON_LOCATOR = (By.XPATH, '//button[@type="submit"]')
     HEADER_LINK_LOCATOR = (By.ID, 'header-link-email')
+    QC_MESSAGE_ERROR = (By.XPATH, '//*[@id="client-login"]/form/div[1]')
 
