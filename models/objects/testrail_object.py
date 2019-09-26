@@ -43,3 +43,6 @@ class SpellCheckerObject:
 
     def click_spell_checker(self, driver):
         self.find_shadow_element.find_spell_checker(driver).click()
+
+    def click_spell_checker_new(self, driver):
+        self.find_shadow_element.find_spell_checker_new(driver).click()
