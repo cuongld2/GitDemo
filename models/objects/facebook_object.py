@@ -16,3 +16,7 @@ class LoginOBject:
         login_button = self.login_page_element.find_login_button(driver)
         login_button.click()
 
+class SpellcheckerObject:
+
+    def click_spell_checker(selfs, driver):
+        find_spell_checker = selfs.click_spell_checker()
