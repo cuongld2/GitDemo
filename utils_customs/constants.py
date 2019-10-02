@@ -14,6 +14,10 @@ class SettingsPageUrls:
     URL_DOWNLOAD_PAGE = 'coccoc://downloads/'
 
 
+class SettingsPageUrlsNew:
+    URL_SETTINGS_PAGE_NEW = 'coccoc://settings/languages'
+
+
 class QcPageUrl:
     URL_QC_PAGE = 'http://staging-1-qc.coccoc.com/user/login'
 
