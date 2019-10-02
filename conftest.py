@@ -19,5 +19,10 @@ def browser():
     chrome_options.add_argument("--disable-infobars")
     # chrome_options.add_argument('--user-data-dir=' + os.environ['user-dir-path'])
     chrome_options.add_argument(
-        '--user-data-dir=' + "C:\\Users\\HoaiThu\\AppData\\Local\\CocCoc\\Browser\\User Data")
+        '--user-data-dir=' + u"C:\\Users\\HoaiThu\\AppData\\Local\\CocCoc\\Browser\\User Data")
     driver = webdriver.Chrome(options=chrome_options)
+    yield driver
+    driver.quit()
+
+
+

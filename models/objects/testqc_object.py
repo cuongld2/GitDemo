@@ -15,3 +15,6 @@ class LoginOBject:
 
         login_button = self.login_page_element.find_login_button(driver)
         login_button.click()
+
+    def get_text_error_when_login_failed(self, driver):
+        return self.login_page_element.find.text
