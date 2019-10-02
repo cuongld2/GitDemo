@@ -11,6 +11,7 @@ class AuthenticationInfo:
 
 class SettingsPageUrls:
     URL_SETTINGS_PAGE = 'coccoc://settings/'
+    URL_DOWNLOAD_PAGE = 'coccoc://downloads/'
 
 
 class QcPageUrl:

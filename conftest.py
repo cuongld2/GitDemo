@@ -17,6 +17,7 @@ def browser():
     chrome_options.add_argument('--ignore-certificate-errors')
     chrome_options.add_argument("--allow-insecure-localhost")
     chrome_options.add_argument("--disable-infobars")
+    chrome_options.add_argument("--enable-features=CocCocNewDownloads")
     # chrome_options.add_argument('--user-data-dir=' + os.environ['user-dir-path'])
     chrome_options.add_argument(
         '--user-data-dir=' + "C:\\Users\\DuongPH_PC\\AppData\\Local\\CocCoc\\Browser\\User Data")
