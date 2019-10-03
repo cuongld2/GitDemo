@@ -1,11 +1,13 @@
 import requests
 
-from config.environment import Environment
+from config.environment import EnvironmentCustom
 
-env_info = Environment()
+environment_custom = EnvironmentCustom()
 
 
 class TestUserInfo:
 
-    def test_create_new_user_success(self, get_path_value):
-        print("Env info is : " + get_path_value)
+    def test_create_new_user_success(self):
+        print("API URL IS : " + environment_custom.API_SERVER_URL)
+
+

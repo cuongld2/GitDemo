@@ -1,7 +1,7 @@
 import yaml
 
 
-class YAML:
+class YamlCustom:
 
     def read_data_from_file(self, file):
         with open(file) as stream:

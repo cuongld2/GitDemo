@@ -1,5 +1,11 @@
+import os
+
 import pytest
 from selenium import webdriver
+
+from utils_customs.files import Files
+
+files = Files()
 
 
 @pytest.fixture(scope='session')
@@ -14,9 +20,14 @@ def pytest_addoption(parser):
     parser.addoption("--env", action="store", default="local")
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='session', autouse=True)
 def get_env_value(pytestconfig):
-    return {pytestconfig.getoption('env')}
+    print(os.getcwd() + '/resources/env.' + str(pytestconfig.getoption('env')) + '.yaml')
+    print(os.getcwd() + '/resources/env.yaml')
+    files.copy_file(os.getcwd() + '/resources/env.' + str(pytestconfig.getoption('env')) + '.yaml',
+                    os.getcwd() + '/resources/env.yaml')
+
+
 
 
 
