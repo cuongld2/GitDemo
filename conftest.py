@@ -11,6 +11,15 @@ def set_up_browser():
 
 def pytest_addoption(parser):
     parser.addoption("--name", action="store", default="default name")
+    parser.addoption("--env", action="store", default="local")
+
+
+@pytest.fixture(scope='session')
+def get_env_value(pytestconfig):
+    return {pytestconfig.getoption('env')}
+
+
+
 
 
 
