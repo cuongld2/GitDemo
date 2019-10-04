@@ -1,13 +1,14 @@
+import os
+
+from utils_customs.path import YamlCustom
+yaml = YamlCustom()
 
 
-class EnvironmentCustom:
-    from utils_customs.path import YamlCustom
-    yaml = YamlCustom()
+def get_environment_info():
+    return yaml.read_data_from_file(os.getcwd().split('/practice/api')[0] + '/resources/env.yaml')
 
-    def get_environment_info(self):
-        return self.yaml.read_data_from_file('../../resources/env.yaml')
 
-    API_SERVER_URL = get_environment_info()['api_server_url']
+API_SERVER_URL = get_environment_info()['api_server_url']
 
 
 

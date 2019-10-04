@@ -22,8 +22,6 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope='session', autouse=True)
 def get_env_value(pytestconfig):
-    print(os.getcwd() + '/resources/env.' + str(pytestconfig.getoption('env')) + '.yaml')
-    print(os.getcwd() + '/resources/env.yaml')
     files.copy_file(os.getcwd() + '/resources/env.' + str(pytestconfig.getoption('env')) + '.yaml',
                     os.getcwd() + '/resources/env.yaml')
 
