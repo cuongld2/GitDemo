@@ -23,14 +23,9 @@ class TestSettingsPage:
     def test_settings_download_page(self, browser):
         browser.get('coccoc://downloads/')
         time.sleep(2)
-        add_link_text = browser.find_element_by_class_name('js-addLink addButton headerButton').get
-        #add_torrent_text = driver.find_element_by_xpath('//*[@id="root"]/div/header/div/button[2]').text
-        #clear_all_text = driver.find_element_by_xpath('//*[@id="root"]/div/header/div/button[5]').text
-
-        print(add_link_text)
-        #print(add_torrent_text)
-        #print(clear_all_text)
-        #print(search_download_text)
-        #assert ('Add link' in add_link_text)
-        #assert ('Add torrent' in add_torrent_text)
-        #assert ('Clear all' in clear_all_text)
+        add_link = browser.find_elements_by_xpath('//*[@title="Add link"]')
+        assert len(add_link) == 1
+        add_torrent = browser.find_elements_by_xpath('//*[@title="Add torrent"]')
+        assert len(add_torrent) == 1
+        clear_all = browser.find_elements_by_xpath('//*[@title="Clear all"]')
+        assert len(clear_all) == 1
