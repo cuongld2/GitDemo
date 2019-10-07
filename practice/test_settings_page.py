@@ -20,13 +20,17 @@ class TestSettingsPage:
         finally:
             driver.quit()
 
-    def test_settings_download_page(self):
-        driver = webdriver.Chrome()
-        try:
-            driver.get(SettingsPageUrls.URL_DOWNLOAD_PAGE)
-            time.sleep(2)
-            assert ('Add link', SettingsPageLocators.ADD_LINK_BUTTON)
-            assert ('Add torrent', SettingsPageLocators.ADD_TORRENT_BUTTON)
-            assert ('Clear all', SettingsPageLocators.CLEAR_ALL_BUTTON)
-        finally:
-            driver.quit()
+    def test_settings_download_page(self, browser):
+        browser.get('coccoc://downloads/')
+        time.sleep(2)
+        add_link_text = browser.find_element_by_class_name('js-addLink addButton headerButton').get
+        #add_torrent_text = driver.find_element_by_xpath('//*[@id="root"]/div/header/div/button[2]').text
+        #clear_all_text = driver.find_element_by_xpath('//*[@id="root"]/div/header/div/button[5]').text
+
+        print(add_link_text)
+        #print(add_torrent_text)
+        #print(clear_all_text)
+        #print(search_download_text)
+        #assert ('Add link' in add_link_text)
+        #assert ('Add torrent' in add_torrent_text)
+        #assert ('Clear all' in clear_all_text)
