@@ -1,6 +1,4 @@
-from marshmallow_dataclass import dataclass
-from typing import List, Optional
-import marshmallow.validate
+from typing import  Optional
 
 
 def userinfo(username, password, fullname):
@@ -11,10 +9,9 @@ def userinfo(username, password, fullname):
     }
 
 
-@dataclass
 class UserInfo(object):
     id: Optional[int]
-    username: int
+    username: str
     password: str
     fullname: str
 

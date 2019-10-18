@@ -18,3 +18,4 @@ class User:
         user_info_instance = UserInfo(username, password, fullname)
         s = json.dumps(user_info_instance.__dict__)
         return requests.post(API_SERVER_URL + API_USER_PATH, data=s, headers={'Content-Type': 'application/json'})
+

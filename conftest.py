@@ -1,8 +1,6 @@
 import os
-
 import pytest
 from selenium import webdriver
-
 from utils_customs.files import Files
 
 files = Files()
