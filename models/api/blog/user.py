@@ -1,4 +1,4 @@
-from typing import  Optional
+from typing import Optional
 
 
 def userinfo(username, password, fullname):
