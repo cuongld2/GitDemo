@@ -3,7 +3,7 @@ from pytest_testrail.plugin import pytestrail
 from api.blog.user import User
 # from utils_customs.database import RestAPIDatabase
 from utils_customs.database import RestAPIDatabase
-from utils_customs.random import RandomGenerator
+from utils_customs.random_utils import RandomGenerator
 
 
 class TestUserInfo:

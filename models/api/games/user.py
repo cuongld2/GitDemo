@@ -1,20 +1,22 @@
 from typing import Optional
 
+from security_utils import Crypts
+
 
 class UserInfo(object):
-    id: Optional[int]
-    role: object
-    identification: list
-    address: object
-    job: object
+    id: Optional[int] = None
+    role: object = None
+    identification: list = []
+    address: object = None
+    job: object = None
 
     def __init__(self, first_name, last_name, password):
         self.name = Name(first_name, last_name)
-        self.password = password
+        self.password = Crypts.encode('encode', password)
 
 
 class Role(object):
-    id: Optional[int]
+    id: Optional[int] = None
 
     def __init__(self, role):
         self.role = role
@@ -28,7 +30,9 @@ class Name(object):
 
 
 class Identification(object):
-    id: Optional[int]
+    id: Optional[int] = None
+    id_number: str = None
+    identification_type: object = None
 
     def __init__(self, id_number, identification_type):
         self.id_number = id_number
@@ -36,13 +40,15 @@ class Identification(object):
 
 
 class IdentificationType(object):
-    id: Optional[int]
+    id: Optional[int] = None
 
     def __init__(self, identification_type):
         self.identification_type = identification_type
 
 
 class Address(object):
+    permanent_address: str = None
+    current_address: str = None
 
     def __init__(self, permanent_address, current_address):
         self.permanent_address = permanent_address
@@ -50,10 +56,12 @@ class Address(object):
 
 
 class Job(object):
+    field: str
+    role: str
 
-    def __init__(self, field, role):
-        self.field = field
-        self.role = role
+    def __init__(self):
+        self.field = ''
+        self.role = ''
 
 
 
