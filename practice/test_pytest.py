@@ -1,7 +1,6 @@
-import os
+import re
 import shutil
 from os import path
-
 import pytest
 
 from utils_customs.path import YamlCustom
@@ -15,7 +14,7 @@ def name(pytestconfig):
 
 
 def test_print_name(name):
-        print(f"\ncommand line param (name): {name}")
+    print(f"\ncommand line param (name): {name}")
 
 
 def test_print_name_2(pytestconfig):
@@ -27,4 +26,12 @@ def test_print():
         shutil.copyfile('guru.txt', 'test.txt')
 
 
+def test_get_user():
+    import getpass
+    print(getpass.getuser())
+
+
+def test_regex():
+    assert_string = re.split(r'[A-Za-z]/', 'https://vuviphim.com/xem-phim-kochouki-wakaki-nobunaga-212770')[1]
+    print(assert_string)
 

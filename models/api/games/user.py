@@ -1,6 +1,7 @@
 from typing import Optional
 
-from security_utils import Crypts
+from utils_customs.security_utils import Crypts
+import json
 
 
 class UserInfo(object):
@@ -13,6 +14,10 @@ class UserInfo(object):
     def __init__(self, first_name, last_name, password):
         self.name = Name(first_name, last_name)
         self.password = Crypts.encode('encode', password)
+
+    def to_json(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          indent=4)
 
 
 class Role(object):
@@ -62,10 +67,3 @@ class Job(object):
     def __init__(self):
         self.field = ''
         self.role = ''
-
-
-
-
-
-
-

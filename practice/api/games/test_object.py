@@ -1,5 +1,3 @@
-import json
-
 from models.api.games.user import UserInfo, Identification, Address, Role, Job
 
 
@@ -23,5 +21,4 @@ class TestObject:
         user_info.role = role
         user_info.job = job
 
-        print(json.dumps(user_info, default=lambda o: o.__dict__,
-                         indent=4))
+        print(user_info.to_json())
