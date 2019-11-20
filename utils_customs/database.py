@@ -1,4 +1,4 @@
-import mysql
+import mysql.connector
 from mysql.connector import Error
 
 
@@ -9,11 +9,11 @@ class MySQL:
             connection = mysql.connector.connect(host=host_name,
                                                  database=database_name,
                                                  user=user_name,
-                                                 password=password)
+                                                 password=password,)
 
             if connection.is_connected():
-                db_Info = connection.get_server_info()
-                print("Connected to MySQL Server version ", db_Info)
+                db_info = connection.get_server_info()
+                print("Connected to MySQL Server version ", db_info)
                 cursor = connection.cursor()
                 cursor.execute("select database();")
                 record = cursor.fetchone()

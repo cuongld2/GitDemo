@@ -1,3 +1,5 @@
+mysql
+mysql
 pynput
 alabaster==0.7.12
 Appium-Python-Client==0.46

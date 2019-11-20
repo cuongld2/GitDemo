@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pynput = "*"
+pytest = "*"
+selenium = "*"
+pyyaml = "*"
+pydrive = "*"
+dropbox = "*"
+pytest-testrail = "*"
+mysql-connector-python = "*"
+testrail-api = "*"
+
+[requires]
+python_version = "3.7"
