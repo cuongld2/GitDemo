@@ -1,6 +1,3 @@
-import pytest
-from selenium import webdriver
-
 from models.objects.facebook_object import StartPageObject
 from utils_customs.constants import SiteUrls
 
@@ -8,12 +5,6 @@ from utils_customs.constants import SiteUrls
 class TestHandleElements:
 
     start_page_object = StartPageObject()
-
-    @pytest.fixture(scope='module')
-    def set_up_browser(self):
-        driver = webdriver.Chrome()
-        yield driver
-        driver.quit()
 
     def test_handle_drop_down_list(self, set_up_browser):
 
