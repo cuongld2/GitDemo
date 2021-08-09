@@ -70,7 +70,7 @@ pytest-testrail==2.8.2
 python-dateutil==2.8.0
 PyTweening==1.0.3
 pytz==2019.2
-pywin32==224
+pywin32==301
 pywinauto==0.6.7
 PyYAML==5.1.1
 reportlab==3.5.23
