@@ -16,7 +16,7 @@ cloudinary==1.17.0
 colorama==0.4.1
 comtypes==1.1.7
 configparser==3.5.0
-cookiecutter==1.6.0
+cookiecutter==2.1.1
 Cython==0.29.13
 decorator==4.4.0
 docutils==0.15.2
